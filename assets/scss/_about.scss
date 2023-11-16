@@ -1,0 +1,21 @@
+// START BANNER
+#about-banner {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 64.52%
+    ),
+    url(../images/banner/about-bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 916px;
+  margin-top: -126px;
+  padding-top: 243px;
+
+  .heading-block {
+    margin: 0 auto;
+    .hero-title {
+      text-align: center;
+    }
+  }
+}
+// END BANNER
