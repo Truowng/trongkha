@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LIB -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Khoá học chi tiết</title>
+  </head>
+  <body>
+    <!-- START HEADER 
+    =================================-->
+    <header id="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" title="Trong Kha" class="header-logo">
+            <img src="./assets/images/logo.png" alt="Logo" />
+          </a>
+          <div class="menu-pc">
+            <div class="top-bar">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Youtube" class="icon">
+                    <img src="./assets/images/icons/yt.svg" alt="Youtube" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#" title="Giới thiệu" class="link">Giới thiệu</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Khoá học" class="link">Khoá học</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Books" class="link">Books</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Blog" class="link">Blog</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Liên hệ" class="link">Liên hệ</a>
+                </li>
+                <li class="header-nav-item">
+                  <a
+                    href="#"
+                    title="Đăng ký"
+                    class="button button-solid button-m"
+                    >Đăng ký</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu-mobile">
+            <div class="top-bar">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Youtube" class="icon">
+                    <img src="./assets/images/icons/yt.svg" alt="Youtube" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="menu-button"
+              onclick="handleMenu('open')"
+            >
+              <img src="./assets/images/icons/hamberger.svg" alt="Menu" />
+            </button>
+            <nav class="header-nav">
+              <button
+                type="button"
+                class="close-button"
+                onclick="handleMenu('close')"
+              >
+                <img src="./assets/images/icons/xmark.svg" alt="Close" />
+              </button>
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#" title="Giới thiệu" class="link">Giới thiệu</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Khoá học" class="link">Khoá học</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Books" class="link">Books</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Blog" class="link">Blog</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Liên hệ" class="link">Liên hệ</a>
+                </li>
+                <li class="header-nav-item">
+                  <a
+                    href="#"
+                    title="Đăng ký"
+                    class="button button-solid button-m"
+                    >Đăng ký</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER 
+    =================================-->
+
+    <main>
+      <!-- START COURSES DETAIL 
+    =================================-->
+      <section id="courses-detail">
+        <div class="container">
+          <div class="detail-heading">
+            <div class="heading-info">
+              <div class="heading-block">
+                <h2 class="title">Thuyết trình - làm chủ sân khấu</h2>
+              </div>
+              <p class="teacher">Giảng viên: Trọng Kha</p>
+            </div>
+            <div class="heading-button">
+              <a
+                href="#"
+                title="Đăng ký ngay"
+                class="button button-outline button-l"
+                >Đăng ký ngay</a
+              >
+              <a href="#" title="Xem nội dung khoá học" class="button-underline"
+                >Xem nội dung khoá học</a
+              >
+            </div>
+          </div>
+          <div class="detail-gallery">
+            <div class="gallery-item">
+              <img src="./assets/images/gallery/1.jpg" alt="Gallery" />
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/images/gallery/2.jpg" alt="Gallery" />
+            </div>
+            <div class="gallery-item">
+              <img src="./assets/images/gallery/3.jpg" alt="Gallery" />
+            </div>
+          </div>
+          <div class="detail-info">
+            <div class="info-item">
+              <div class="title">
+                <div class="icon">
+                  <img src="./assets/images/icons/clock.svg" alt="Info" />
+                </div>
+                <h4 class="text">Thời lượng</h4>
+              </div>
+              <p class="content">10 buổi/3 tuần</p>
+            </div>
+            <div class="info-item">
+              <div class="title">
+                <div class="icon">
+                  <img src="./assets/images/icons/people.svg" alt="Info" />
+                </div>
+                <h4 class="text">Số lượng</h4>
+              </div>
+              <p class="content">50 người</p>
+            </div>
+            <div class="info-item">
+              <div class="title">
+                <div class="icon">
+                  <img src="./assets/images/icons/level.svg" alt="Info" />
+                </div>
+                <h4 class="text">Cấp độ</h4>
+              </div>
+              <p class="content">Mới bắt đầu</p>
+            </div>
+          </div>
+          <div class="detail-desc">
+            <p class="text">
+              Khóa học này nhằm giúp bạn phát triển và nâng cao kỹ năng thuyết
+              trình, từ việc xây dựng bài thuyết trình đến trình diễn trên sân
+              khấu một cách tự tin và chuyên nghiệp. Dưới đây là những nội dung
+              chính mà khóa học cung cấp:
+            </p>
+            <p class="text">
+              - Xây dựng bài thuyết trình hiệu quả: Bạn sẽ được hướng dẫn cách
+              tạo ra bài thuyết trình có cấu trúc logic, mạch lạc và hấp dẫn.
+              Khóa học tập trung vào việc lựa chọn và sắp xếp thông tin, xây
+              dựng luồng logic cho bài thuyết trình, và sử dụng các phương pháp
+              trình bày hiệu quả
+            </p>
+            <p class="text">
+              - Kỹ năng trình diễn và giao tiếp trên sân khấu: Khóa học sẽ giúp
+              bạn rèn kỹ năng diễn xuất và giao tiếp trên sân khấu. Bạn sẽ học
+              cách sử dụng giọng điệu, cử chỉ và ngôn ngữ cơ thể để tạo sự tương
+              tác và thu hút khán giả. Các kỹ thuật quản lý trạng thái cảm xúc
+              và tạo dựng sự tự tin trên sân khấu cũng sẽ được truyền đạt.
+            </p>
+            <p class="text">
+              - Tương tác với khán giả và xử lý câu hỏi thách thức: Khóa học sẽ
+              giúp bạn nắm vững kỹ năng tương tác với khán giả và trả lời các
+              câu hỏi thách thức một cách tự tin và rõ ràng. Bạn sẽ học cách xử
+              lý tình huống khó khăn, duy trì sự tương tác tích cực và xây dựng
+              mối quan hệ tốt với khán giả.
+            </p>
+            <p class="text">
+              - Sử dụng công nghệ và trình chiếu: Khóa học sẽ giới thiệu về việc
+              sử dụng công nghệ và trình chiếu để tăng cường hiệu quả của bài
+              thuyết trình. Bạn sẽ học cách sử dụng các công cụ trình chiếu, đồ
+              họa và hiệu ứng âm thanh để truyền đạt thông điệp một cách sáng
+              tạo và chuyên nghiệp.
+            </p>
+            <p class="text">
+              - Luyện tập và phản hồi: Trong suốt khóa học, bạn sẽ có cơ hội
+              thực hành và luyện tập kỹ năng thuyết trình thông qua các bài tập
+              và hoạt động thực tế. Bạn sẽ nhận được phản hồi và hướng dẫn từ
+              giảng viên và các thành viên khác trong lớp học để cải thiện kỹ
+              năng của mình.Khóa học “Kỹ năng thuyết trình – Làm chủ sân khấu”
+              sẽ giúp bạn trở thành một nhà thuyết trình tự tin, có khả năng
+              giao tiếp hiệu quả và làm chủ sân khấu. Bất kể bạn đang theo đuổi
+              sự nghiệp diễn giả, người truyền thông hay chỉ đơn giản là muốn
+              nâng cao kỹ năng thuyết trình, khóa học này sẽ mang lại những giá
+              trị vô cùng quý giá cho bạn.
+            </p>
+            <p class="text">
+              Chúc bạn thành công trong việc phát triển kỹ năng thuyết trình và
+              làm chủ sân khấu của mình.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- END COURSES DETAIL 
+    =================================-->
+
+      <!-- START VALUE 
+    =================================-->
+      <section id="courses-value" class="value">
+        <div class="container">
+          <div class="heading-block">
+            <h2 class="title">KHÓA HỌC SẼ GIÚP BẠN</h2>
+            <p class="desc">
+              Khoá học thuyết trình có thể giúp bạn phát triển kỹ năng giao tiếp
+              và trình bày thông tin một cách hiệu quả
+            </p>
+          </div>
+          <div class="value-slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="value-item">
+                    <div class="icon">
+                      <img
+                        src="./assets/images/icons/checked.svg"
+                        alt="Check"
+                      />
+                    </div>
+                    <div class="content">
+                      <h3 class="title">Kỹ năng giao tiếp</h3>
+                      <p class="desc">
+                        Học cách nói chuyện một cách rõ ràng và hiệu quả, để bạn
+                        có thể truyền đạt thông điệp của mình một cách dễ hiểu.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="value-item">
+                    <div class="icon">
+                      <img
+                        src="./assets/images/icons/checked.svg"
+                        alt="Check"
+                      />
+                    </div>
+                    <div class="content">
+                      <h3 class="title">Nâng cao tự tin</h3>
+                      <p class="desc">
+                        Thuyết trình thường xuyên liên quan đến việc đứng trước
+                        đám đông, và việc này có thể giúp bạn nâng cao tự tin
+                        của mình.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="value-item">
+                    <div class="icon">
+                      <img
+                        src="./assets/images/icons/checked.svg"
+                        alt="Check"
+                      />
+                    </div>
+                    <div class="content">
+                      <h3 class="title">Tư duy logic và phân tích</h3>
+                      <p class="desc">
+                        Phát triển khả năng tư duy logic để xây dựng và trình
+                        bày một luận điểm một cách mạch lạc và thuyết phục.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END VALUE 
+    =================================-->
+
+      <!-- START FORM 
+    =================================-->
+      <section id="courses-form" class="form">
+        <div class="form-wrapper">
+          <div class="form-image">
+            <img src="./assets/images/others/form.jpg" alt="Form" />
+          </div>
+          <div class="form-content">
+            <div class="heading-block">
+              <h2 class="title">Đăng ký đào tạo</h2>
+              <p class="desc">
+                Chỉ sử dụng form này khi bạn cần gởi câu hỏi cho Trọng Kha. Để
+                subscribe nhận bài mới, bạn kéo lên đầu trang, nhập email và bấm
+                subscribe nhé!
+              </p>
+            </div>
+            <form class="main-form">
+              <div class="input-wrapper">
+                <input type="text" placeholder="Họ*" />
+                <input type="text" placeholder="Tên*" />
+              </div>
+              <div class="input-wrapper">
+                <input type="email" placeholder="Email*" />
+                <input type="text" placeholder="Tiêu đề*" />
+              </div>
+              <textarea cols="30" rows="5" placeholder="Nội dung*"></textarea>
+              <button type="submit" class="button button-outline button-l">
+                Tôi tham gia
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- END FORM 
+    =================================-->
+    </main>
+    <!-- START FOOTER 
+    =================================-->
+    <footer id="footer">
+      <div class="container">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" title="Facebook" class="icon">
+              <img src="./assets/images/icons/fb-1.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" title="Youtube" class="icon">
+              <img src="./assets/images/icons/yt-1.svg" alt="Youtube" />
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" title="Facebook" class="icon">
+              <img src="./assets/images/icons/fb-1.svg" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-link-list">
+          <li class="footer-link-item">
+            <a href="#" title="Giới thiệu">Giới thiệu</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Khoá học">Khoá học</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="podcasts">podcasts</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Books">Books</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Blog">Blog</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Liên hệ">Liên hệ</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Đăng ký">Đăng ký</a>
+          </li>
+        </ul>
+        <p class="copyrights">
+          2023 © Copyright of trongkha.com. All Right Reserved.
+        </p>
+        <a href="#" title="Trong Kha" class="footer-logo">
+          <img src="./assets/images/logo.png" alt="Trong Kha" />
+        </a>
+      </div>
+    </footer>
+    <!-- END FOOTER 
+    =================================-->
+
+    <!-- LIB -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/courses.js"></script>
+  </body>
+</html>

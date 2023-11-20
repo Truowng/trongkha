@@ -158,63 +158,6 @@
 #home-blog {
   background-color: $white;
   padding: 140px 0;
-  .heading-block {
-    .title {
-      text-align: center;
-    }
-    .desc {
-      max-width: 596px;
-      margin: 0 auto;
-      text-align: center;
-      color: $black;
-    }
-  }
-  .blog-slider {
-    margin-top: 50px;
-  }
-  .blog-item {
-    width: 100%;
-    .image {
-      margin-bottom: 25px;
-    }
-    .content {
-      .date {
-        font-size: 11px;
-        line-height: 15px;
-        margin-bottom: 10px;
-        display: block;
-        letter-spacing: 0.3em;
-      }
-      .title {
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: $fw-sb;
-        color: $black;
-        font-family: $font-oswald;
-        margin-bottom: 10px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        text-transform: uppercase;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      .desc {
-        font-size: 16px;
-        line-height: 30px;
-        font-weight: $fw-l;
-        color: $black;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        text-overflow: ellipsis;
-        overflow: hidden;
-      }
-    }
-  }
 }
 // END BLOG
 

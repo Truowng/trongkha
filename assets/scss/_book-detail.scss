@@ -1,0 +1,71 @@
+// START BOOK DETAIL
+#book-detail {
+  padding: 112px 0 103px;
+  margin-top: 27px;
+  background-color: $white;
+  .detail-wrapper {
+    @include flex(space-between, start, 72px);
+  }
+  .detail-image {
+    max-width: 470px;
+    width: 100%;
+    aspect-ratio: 470/752;
+  }
+  .detail-content {
+    max-width: 628px;
+    width: 100%;
+    .heading-block {
+      .title {
+        margin-bottom: 19px;
+      }
+    }
+    .price {
+      font-size: 28px;
+      line-height: 38px;
+      font-weight: $fw-b;
+    }
+    .desc {
+      margin-top: 27px;
+      padding-top: 31px;
+      border-top: 1px solid #e4e4e4;
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: $fw-l;
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+// END BOOK DETAIL
+
+// START BOOK RELATE
+#book-relate {
+  padding: 110px 0;
+  background-color: #f8f8f8;
+  .heading-block {
+    .title {
+      text-align: center;
+      margin-bottom: 84px;
+    }
+  }
+}
+// END BOOK RELATE
+
+// START RESPONSIVE
+@include tablet {
+  #book-detail {
+    .detail-wrapper {
+      flex-direction: column;
+    }
+    .detail-image {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .detail-content {
+      max-width: 100%;
+    }
+  }
+}
+// END RESPONSIVE

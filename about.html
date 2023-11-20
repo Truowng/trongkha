@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LIB -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Giới thiệu</title>
+  </head>
+  <body>
+    <!-- START HEADER 
+    =================================-->
+    <header id="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" title="Trong Kha" class="header-logo">
+            <img src="./assets/images/logo.png" alt="Logo" />
+          </a>
+          <div class="menu-pc">
+            <div class="top-bar">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Youtube" class="icon">
+                    <img src="./assets/images/icons/yt.svg" alt="Youtube" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#" title="Giới thiệu" class="link">Giới thiệu</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Khoá học" class="link">Khoá học</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Books" class="link">Books</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Blog" class="link">Blog</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Liên hệ" class="link">Liên hệ</a>
+                </li>
+                <li class="header-nav-item">
+                  <a
+                    href="#"
+                    title="Đăng ký"
+                    class="button button-solid button-m"
+                    >Đăng ký</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu-mobile">
+            <div class="top-bar">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Youtube" class="icon">
+                    <img src="./assets/images/icons/yt.svg" alt="Youtube" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="menu-button"
+              onclick="handleMenu('open')"
+            >
+              <img src="./assets/images/icons/hamberger.svg" alt="Menu" />
+            </button>
+            <nav class="header-nav">
+              <button
+                type="button"
+                class="close-button"
+                onclick="handleMenu('close')"
+              >
+                <img src="./assets/images/icons/xmark.svg" alt="Close" />
+              </button>
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#" title="Giới thiệu" class="link">Giới thiệu</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Khoá học" class="link">Khoá học</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Books" class="link">Books</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Blog" class="link">Blog</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Liên hệ" class="link">Liên hệ</a>
+                </li>
+                <li class="header-nav-item">
+                  <a
+                    href="#"
+                    title="Đăng ký"
+                    class="button button-solid button-m"
+                    >Đăng ký</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER 
+    =================================-->
+    <main>
+      <!-- START BANNER 
+    =================================-->
+      <section id="about-banner" class="banner">
+        <div class="container">
+          <div class="heading-block">
+            <h1 class="hero-title">
+              Welcome to <br />
+              nguyen trong kha
+            </h1>
+          </div>
+        </div>
+      </section>
+      <!-- END BANNER 
+    =================================-->
+
+      <!-- START ABOUT 
+    =================================-->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-wrapper">
+            <div class="about-image">
+              <img src="./assets/images/about/about.png" alt="Trong Kha" />
+            </div>
+            <div class="about-content">
+              <div class="heading-block">
+                <h2 class="title">Về Trọng Kha</h2>
+                <p class="desc">
+                  Franchise Expert, Entrepreneur & Angel Investor - Chuyên gia
+                  nhượng quyền, Doanh nhân & Nhà đầu tư thiên thần
+                </p>
+              </div>
+              <p class="text">
+                Trọng Kha tốt nghiệp MBA tại Úc. Cô đã từng giữ các vị trí cao
+                cấp về quản trị thương hiệu, bán lẻ, nhượng quyền & phát triển
+                kinh doanh cho các tập đoàn lớn tại các khu vực thị trường châu
+                Á, Trung đông, châu Phi & Đông Âu.
+              </p>
+              <p class="text">
+                Phi Vân tham gia vào nhiều dự án chính phủ về phát triển doanh
+                nghiệp & kinh tế sáng tạo tại Đông Nam Á, hiện là cố vấn đề án
+                844 về phát triển hệ sinh thái khởi nghiệp Việt Nam, chủ tịch
+                mạng lưới đầu tư thiên thần Đông Nam Á, và đại diện cấp cao Việt
+                Nam tại diễn đàn đầu tư thiên thần toàn cầu.
+              </p>
+              <a href="#" title="Xem thêm" class="button button-solid button-m"
+                >Xem thêm</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END ABOUT 
+    =================================-->
+
+      <!-- START MISSION 
+    =================================-->
+      <section id="about-mission">
+        <div class="container">
+          <div class="mission-wrapper">
+            <div class="mission-content">
+              <div class="heading-block">
+                <h2 class="title">Sứ mệnh của chúng tôi</h2>
+              </div>
+              <p class="text">
+                Năm 2015, Khóa học High Influence Public Speaking được thành lập
+                với một sứ mệnh giản đơn: giúp những bạn trẻ Việt Nam có được kỹ
+                năng chia sẻ – thuyết trình tự tin trước đám đông. Chúng tôi
+                mong muốn với đóng góp của chính mình có thể mang lại sự thay
+                đổi tích cực cho thế hệ những bạn trẻ tại Việt Nam.
+              </p>
+              <p class="text">
+                Dần dần, High Influence Public Speaking không chỉ đơn thuần là
+                một khóa dạy kỹ năng thuyết trình, mà nó còn là khóa học dạy kỹ
+                năng giao tiếp trong cuộc sống/ công việc hàng ngày cho bất kì
+                độ tuổi nào.
+              </p>
+              <p class="text">
+                Tới năm 2020, Underground Leader xuất hiện như một người anh đến
+                để giúp đỡ những bạn trẻ đang làm quản lý nhưng chưa có nhiều
+                kinh nghiệm lãnh đạo đang trên hành trình dẫn dắt đội nhóm và sự
+                nghiệp của mình.
+              </p>
+            </div>
+            <div class="mission-image">
+              <img src="./assets/images/others/mission.jpg" alt="Mission" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END MISSION 
+    =================================-->
+
+      <!-- START VALUE 
+    =================================-->
+      <section id="about-value">
+        <div class="container">
+          <div class="value-content">
+            <div class="heading-block">
+              <h2 class="title">VĂN HÓA VÀ GIÁ TRỊ CỐT LÕI</h2>
+            </div>
+            <p class="text">
+              Kết quả có được ngày hôm nay là sự nỗ lực không ngừng của ngày hôm
+              qua. Chúng tôi là một tổ chức không ngừng cố gắng, không ngừng học
+              hỏi để phát triển và liên tục tìm kiếm những cách làm mới tốt hơn
+              để tất cả cùng đi lên.
+            </p>
+            <p class="text">
+              Chúng tôi làm việc một cách tự do – độc lập nhưng không có nghĩa
+              là chúng tôi không biết cách phối hợp, huy động nguồn lực hỗ trợ
+              nhau đạt kết quả.
+            </p>
+            <p class="text">
+              Điều đó không có nghĩa là bạn cần phải tự mình hoàn thành mọi việc
+              hoặc tạo ra kịch tính và / hoặc hỗn loạn cho người khác.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- END VALUE 
+    =================================-->
+
+      <!-- START TEAM 
+    =================================-->
+      <section id="about-team">
+        <div class="container">
+          <div class="heading-block">
+            <h2 class="title">Đội ngũ của chúng tôi</h2>
+            <p class="desc">
+              Tự đặt câu hỏi - bước đầu tiên trên hành trình phát triển bản thân
+              của bạn. Xem video để biết thêm chi tiết về khoá học
+            </p>
+          </div>
+          <div class="team-slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="team-item">
+                    <div class="image">
+                      <img src="./assets/images/team/Jane.jpg" alt="Jane" />
+                    </div>
+                    <div class="content">
+                      <h3 class="name">Jane</h3>
+                      <p class="job">Quản lí</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-item">
+                    <div class="image">
+                      <img src="./assets/images/team/TK.jpg" alt="Jane" />
+                    </div>
+                    <div class="content">
+                      <h3 class="name">trọng Kha</h3>
+                      <p class="job">Nhà sáng lập</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-item">
+                    <div class="image">
+                      <img
+                        src="./assets/images/team/Jennifer.jpg"
+                        alt="Jenifer"
+                      />
+                    </div>
+                    <div class="content">
+                      <h3 class="name">Jenifer</h3>
+                      <p class="job">Thư kí</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-item">
+                    <div class="image">
+                      <img src="./assets/images/team/Jane.jpg" alt="Jane" />
+                    </div>
+                    <div class="content">
+                      <h3 class="name">Jane</h3>
+                      <p class="job">Quản lí</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-item">
+                    <div class="image">
+                      <img src="./assets/images/team/TK.jpg" alt="Jane" />
+                    </div>
+                    <div class="content">
+                      <h3 class="name">trọng Kha</h3>
+                      <p class="job">Nhà sáng lập</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-item">
+                    <div class="image">
+                      <img
+                        src="./assets/images/team/Jennifer.jpg"
+                        alt="Jenifer"
+                      />
+                    </div>
+                    <div class="content">
+                      <h3 class="name">trọng Kha</h3>
+                      <p class="job">Thư kí</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END TEAM 
+    =================================-->
+
+      <!-- START CLIENTS 
+    =================================-->
+      <div id="about-clients" class="clients">
+        <div class="container">
+          <div class="heading-block">
+            <h2 class="title">Đối tác & Khách hàng</h2>
+            <p class="desc">
+              Tự đặt câu hỏi - bước đầu tiên trên hành trình phát triển bản thân
+              của bạn. Xem video để biết thêm chi tiết về khoá học
+            </p>
+          </div>
+          <div class="clients-group">
+            <div class="clients-item">
+              <img src="./assets/images/clients/1.png" alt="Client" />
+            </div>
+            <div class="clients-item">
+              <img src="./assets/images/clients/2.png" alt="Client" />
+            </div>
+            <div class="clients-item">
+              <img src="./assets/images/clients/3.png" alt="Client" />
+            </div>
+            <div class="clients-item">
+              <img src="./assets/images/clients/4.png" alt="Client" />
+            </div>
+            <div class="clients-item">
+              <img src="./assets/images/clients/5.png" alt="Client" />
+            </div>
+            <div class="clients-item">
+              <img src="./assets/images/clients/6.png" alt="Client" />
+            </div>
+            <div class="clients-item">
+              <img src="./assets/images/clients/7.png" alt="Client" />
+            </div>
+            <div class="clients-item">
+              <img src="./assets/images/clients/8.png" alt="Client" />
+            </div>
+            <div class="clients-item">
+              <img src="./assets/images/clients/9.png" alt="Client" />
+            </div>
+            <div class="clients-item">
+              <img src="./assets/images/clients/10.png" alt="Client" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END CLIENTS 
+    =================================-->
+
+      <!-- START PROJECT 
+    =================================-->
+      <div id="about-project" class="project">
+        <div class="container">
+          <div class="project-heading">
+            <div class="heading-block">
+              <h2 class="title">Dự án của Trọng Kha</h2>
+            </div>
+            <a href="#" title="Xem toàn bộ" class="button button-solid button-m"
+              >Xem toàn bộ</a
+            >
+          </div>
+          <div class="project-slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="project-item">
+                    <div class="image">
+                      <img src="./assets/images/projects/1.jpg" alt="Project" />
+                    </div>
+                    <a href="#" title="Thắp lửa yêu thương" class="title"
+                      >Thắp lửa yêu thương</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project-item">
+                    <div class="image">
+                      <img src="./assets/images/projects/2.jpg" alt="Project" />
+                    </div>
+                    <a href="#" title="Thắp lửa yêu thương" class="title"
+                      >Thắp lửa yêu thương</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project-item">
+                    <div class="image">
+                      <img src="./assets/images/projects/3.jpg" alt="Project" />
+                    </div>
+                    <a href="#" title="Thắp lửa yêu thương" class="title"
+                      >Thắp lửa yêu thương</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project-item">
+                    <div class="image">
+                      <img src="./assets/images/projects/4.jpg" alt="Project" />
+                    </div>
+                    <a href="#" title="Thắp lửa yêu thương" class="title"
+                      >Thắp lửa yêu thương</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project-item">
+                    <div class="image">
+                      <img src="./assets/images/projects/1.jpg" alt="Project" />
+                    </div>
+                    <a href="#" title="Thắp lửa yêu thương" class="title"
+                      >Thắp lửa yêu thương</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-button slider-button-next">
+              <img
+                src="./assets/images/icons/carret-r-black.svg"
+                alt="Arrow right"
+              />
+            </div>
+            <div class="slider-button slider-button-prev">
+              <img
+                src="./assets/images/icons/carret-l-black.svg"
+                alt="Arrow left"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END PROJECT 
+    =================================-->
+      <!-- START FORM 
+    =================================-->
+      <section id="about-form" class="form">
+        <div class="form-wrapper">
+          <div class="form-image">
+            <img src="./assets/images/others/form.jpg" alt="Form" />
+          </div>
+          <div class="form-content">
+            <div class="heading-block">
+              <h2 class="title">Đăng ký đào tạo</h2>
+              <p class="desc">
+                Chỉ sử dụng form này khi bạn cần gởi câu hỏi cho Trọng Kha. Để
+                subscribe nhận bài mới, bạn kéo lên đầu trang, nhập email và bấm
+                subscribe nhé!
+              </p>
+            </div>
+            <form class="main-form">
+              <div class="input-wrapper">
+                <input type="text" placeholder="Họ*" />
+                <input type="text" placeholder="Tên*" />
+              </div>
+              <div class="input-wrapper">
+                <input type="email" placeholder="Email*" />
+                <input type="text" placeholder="Tiêu đề*" />
+              </div>
+              <textarea cols="30" rows="5" placeholder="Nội dung*"></textarea>
+              <button type="submit" class="button button-outline button-l">
+                Tôi tham gia
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- END FORM 
+    =================================-->
+    </main>
+    <!-- START FOOTER 
+    =================================-->
+    <footer id="footer">
+      <div class="container">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" title="Facebook" class="icon">
+              <img src="./assets/images/icons/fb-1.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" title="Youtube" class="icon">
+              <img src="./assets/images/icons/yt-1.svg" alt="Youtube" />
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" title="Facebook" class="icon">
+              <img src="./assets/images/icons/fb-1.svg" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-link-list">
+          <li class="footer-link-item">
+            <a href="#" title="Giới thiệu">Giới thiệu</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Khoá học">Khoá học</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="podcasts">podcasts</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Books">Books</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Blog">Blog</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Liên hệ">Liên hệ</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Đăng ký">Đăng ký</a>
+          </li>
+        </ul>
+        <p class="copyrights">
+          2023 © Copyright of trongkha.com. All Right Reserved.
+        </p>
+        <a href="#" title="Trong Kha" class="footer-logo">
+          <img src="./assets/images/logo.png" alt="Trong Kha" />
+        </a>
+      </div>
+    </footer>
+    <!-- END FOOTER 
+    =================================-->
+
+    <!-- LIB -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/about.js"></script>
+  </body>
+</html>

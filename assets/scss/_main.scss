@@ -149,6 +149,34 @@ img {
   }
 }
 
+.pagination {
+  @include flex(center, center, 14px);
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  .button,
+  .page {
+    @include flex(center, center, unset);
+    border-radius: 500px;
+    border: 2px solid $black;
+    color: $black;
+    font-size: 13px;
+    line-height: 20px;
+    width: 37px;
+    aspect-ratio: 1;
+    transition: all ease 0.5s;
+    font-weight: $fw-b;
+    &:hover {
+      background-color: $yellow;
+      border-color: $yellow;
+    }
+  }
+  .etc {
+    font-weight: 13px;
+    line-height: 20px;
+    font-weight: $fw-b;
+  }
+}
+
 // START HEADER
 #header {
   padding-top: 26px;
@@ -520,6 +548,121 @@ img {
 }
 // END PROJECT
 
+// START VALUE
+.value {
+  background: url(../images/others/course-value-bg.png) no-repeat center;
+  background-size: cover;
+  padding: 90px 0;
+  .heading-block {
+    .title {
+      text-align: center;
+    }
+    .desc {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 596px;
+    }
+  }
+  .value-slider {
+    margin-top: 50px;
+  }
+  .value-item {
+    .icon {
+      width: 33px;
+      aspect-ratio: 1;
+      margin: 0 auto 16px;
+    }
+    .content {
+      .title {
+        color: $white;
+        font-family: $font-oswald;
+        text-align: center;
+        font-size: 20px;
+        font-weight: $fw-sb;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      .desc {
+        color: $white;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 30px;
+      }
+    }
+  }
+}
+// END VALUE
+
+// START BLOG
+.blog {
+  .heading-block {
+    .title {
+      text-align: center;
+    }
+    .desc {
+      max-width: 596px;
+      margin: 0 auto;
+      text-align: center;
+      color: $black;
+    }
+  }
+  .blog-slider {
+    margin-top: 50px;
+  }
+  .blog-group {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 50px;
+  }
+  .blog-item {
+    width: 100%;
+    .image {
+      margin-bottom: 25px;
+    }
+    .content {
+      .date {
+        font-size: 11px;
+        line-height: 15px;
+        margin-bottom: 10px;
+        display: block;
+        letter-spacing: 0.3em;
+      }
+      .title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: $fw-sb;
+        color: $black;
+        font-family: $font-oswald;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .desc {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: $fw-l;
+        color: $black;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}
+// END BLOG
+
 // START FORM
 .form {
   .form-wrapper {
@@ -586,6 +729,48 @@ img {
   }
 }
 // END FORM
+
+// START BOOK
+.book {
+  .book-group {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 195px;
+    grid-row-gap: 62px;
+  }
+  .book-item {
+    .image {
+      aspect-ratio: 256/369;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .content {
+      .title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: $fw-sb;
+        font-family: $font-oswald;
+        margin-bottom: 12px;
+        display: block;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .price {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: $fw-l;
+      }
+    }
+  }
+  .button {
+    margin: 66px auto 0;
+    letter-spacing: 0.1em;
+  }
+}
+// END BOOK
 
 // START FOOTER
 #footer {
@@ -726,6 +911,12 @@ img {
   .clients .clients-group {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .book {
+    .book-group {
+      grid-column-gap: 80px;
+    }
+  }
 }
 
 @include landscape-phone {
@@ -739,6 +930,17 @@ img {
     .project-heading {
       flex-direction: column;
       align-items: start;
+    }
+  }
+  .blog {
+    .blog-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .book {
+    .book-group {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
@@ -760,6 +962,18 @@ img {
       .input-wrapper {
         flex-direction: column;
       }
+    }
+  }
+
+  .blog {
+    .blog-group {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .book {
+    .book-group {
+      grid-column-gap: 40px;
     }
   }
 

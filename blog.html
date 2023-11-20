@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LIB -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <!-- START HEADER 
+    =================================-->
+    <header id="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" title="Trong Kha" class="header-logo">
+            <img src="./assets/images/logo.png" alt="Logo" />
+          </a>
+          <div class="menu-pc">
+            <div class="top-bar">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Youtube" class="icon">
+                    <img src="./assets/images/icons/yt.svg" alt="Youtube" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#" title="Giới thiệu" class="link">Giới thiệu</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Khoá học" class="link">Khoá học</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Books" class="link">Books</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Blog" class="link">Blog</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Liên hệ" class="link">Liên hệ</a>
+                </li>
+                <li class="header-nav-item">
+                  <a
+                    href="#"
+                    title="Đăng ký"
+                    class="button button-solid button-m"
+                    >Đăng ký</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu-mobile">
+            <div class="top-bar">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Youtube" class="icon">
+                    <img src="./assets/images/icons/yt.svg" alt="Youtube" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="menu-button"
+              onclick="handleMenu('open')"
+            >
+              <img src="./assets/images/icons/hamberger.svg" alt="Menu" />
+            </button>
+            <nav class="header-nav">
+              <button
+                type="button"
+                class="close-button"
+                onclick="handleMenu('close')"
+              >
+                <img src="./assets/images/icons/xmark.svg" alt="Close" />
+              </button>
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#" title="Giới thiệu" class="link">Giới thiệu</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Khoá học" class="link">Khoá học</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Books" class="link">Books</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Blog" class="link">Blog</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Liên hệ" class="link">Liên hệ</a>
+                </li>
+                <li class="header-nav-item">
+                  <a
+                    href="#"
+                    title="Đăng ký"
+                    class="button button-solid button-m"
+                    >Đăng ký</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER 
+    =================================-->
+
+    <main>
+      <!-- START BLOG 
+    =================================-->
+      <section id="blog" class="blog">
+        <div class="container">
+          <div class="heading-block">
+            <h2 class="title">Blog's Trọng Kha</h2>
+            <p class="desc">
+              Tự đặt câu hỏi - bước đầu tiên trên hành trình phát triển bản thân
+              của bạn. Xem video để biết thêm chi tiết về khoá học
+            </p>
+          </div>
+          <div class="blog-group">
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog/1.jpg" alt="Blog" />
+              </div>
+              <div class="content">
+                <span class="date"> 01/06/2023 </span>
+                <a href="#" title="Diễn thuyết theo chủ đề" class="title"
+                  >Diễn thuyết theo chủ đề</a
+                >
+                <p class="desc">
+                  Chào bạn! Với mong muốn tạo ra những chương trình diễn thuyết,
+                  truyền cảm hứng tới thế hệ trẻ ở độ tuổi 15-30. Giúp các....
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog/2.jpg" alt="Blog" />
+              </div>
+              <div class="content">
+                <span class="date"> 01/06/2023 </span>
+                <a href="#" title="Tài chính cá nhân" class="title"
+                  >Tài chính cá nhân</a
+                >
+                <p class="desc">
+                  “Làm chủ tư duy tài chính cá nhân” dành cho các bạn trẻ. Khóa
+                  học này nhằm giúp các bạn trẻ hiểu và áp dụng...
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog/3.jpg" alt="Blog" />
+              </div>
+              <div class="content">
+                <span class="date"> 01/06/2023 </span>
+                <a
+                  href="#"
+                  title="Thuyết trình – làm chủ sân khấu"
+                  class="title"
+                  >Thuyết trình – làm chủ sân khấu</a
+                >
+                <p class="desc">
+                  Chào bạn! Với mong muốn tạo ra những chương trình diễn thuyết,
+                  truyền cảm hứng tới thế hệ trẻ ở độ tuổi 15-30. Giúp các...
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog/4.jpg" alt="Blog" />
+              </div>
+              <div class="content">
+                <span class="date"> 01/06/2023 </span>
+                <a href="#" title="Mama Phi & giấc mơ Việt Nam" class="title"
+                  >Mama Phi & giấc mơ Việt Nam</a
+                >
+                <p class="desc">
+                  Chẳng biết tự khi nào, có lẽ là vì chính tâm thức của mình đã
+                  coi các bạn như con cái trong nhà, nên bản thân trong vô thức
+                  đã hành xử...
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog/5.jpg" alt="Blog" />
+              </div>
+              <div class="content">
+                <span class="date"> 01/06/2023 </span>
+                <a href="#" title="Làm việc đội nhóm hiệu quả" class="title"
+                  >Làm việc đội nhóm hiệu quả</a
+                >
+                <p class="desc">
+                  Không ai đi làm mà có thể thiếu kỹ năng này, vì không ai trên
+                  đời có thể một mình làm được tất cả. Trong khoá học này...
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog/6.jpg" alt="Blog" />
+              </div>
+              <div class="content">
+                <span class="date"> 01/06/2023 </span>
+                <a href="#" title="ĐƯỜNG AI NGƯỜI ẤY ĐI…" class="title"
+                  >ĐƯỜNG AI NGƯỜI ẤY ĐI…</a
+                >
+                <p class="desc">
+                  Tôi nhận rất nhiều tin nhắn buồn bã, có khi chán nản, tuyệt
+                  vọng vì thấy mình không bằng ai, thấy mình thật là tệ, thấy
+                  mình...
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog/7.jpg" alt="Blog" />
+              </div>
+              <div class="content">
+                <span class="date"> 01/06/2023 </span>
+                <a
+                  href="#"
+                  title="KỸ NĂNG TỔ CHỨC & QUẢN TRỊ DỰ ÁN"
+                  class="title"
+                  >KỸ NĂNG TỔ CHỨC & QUẢN TRỊ DỰ ÁN</a
+                >
+                <p class="desc">
+                  Chẳng biết tự khi nào, có lẽ là vì chính tâm thức của mình đã
+                  coi các bạn như con cái trong nhà, nên bản thân trong vô thức
+                  đã hành...
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog/8.jpg" alt="Blog" />
+              </div>
+              <div class="content">
+                <span class="date"> 01/06/2023 </span>
+                <a href="#" title="GIAO TIẾP HIỆU QUẢ KHÔNG KHÓ" class="title"
+                  >GIAO TIẾP HIỆU QUẢ KHÔNG KHÓ</a
+                >
+                <p class="desc">
+                  Mặc dù đã chia sẻ rất nhiều về Kỹ năng giao tiếp trong suốt
+                  quá trình viết blog, tôi vẫn thường nhận được câu hỏi của các
+                  bạn trẻ...
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="image">
+                <img src="./assets/images/blog/9.jpg" alt="Blog" />
+              </div>
+              <div class="content">
+                <span class="date"> 01/06/2023 </span>
+                <a href="#" title="KỸ NĂNG ĐÀM PHÁN" class="title"
+                  >KỸ NĂNG ĐÀM PHÁN</a
+                >
+                <p class="desc">
+                  Nghe chữ đàm phán nghe ghê quá, tưởng tượng như những cuộc đấu
+                  trí thế kỷ như Việt Nam đàm phán gia nhập WTO. Thì đó là đàm
+                  phán...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <a href="#" title="Prev" class="button"> < </a>
+            <a href="#" title="1" class="page">1</a>
+            <a href="#" title="2" class="page">2</a>
+            <a href="#" title="3" class="page">3</a>
+            <span class="etc">...</span>
+            <a href="#" title="15" class="page">15</a>
+            <a href="#" title="Next" class="button"> > </a>
+          </div>
+        </div>
+      </section>
+      <!-- END BLOG 
+    =================================-->
+    </main>
+    <!-- START FOOTER 
+    =================================-->
+    <footer id="footer">
+      <div class="container">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" title="Facebook" class="icon">
+              <img src="./assets/images/icons/fb-1.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" title="Youtube" class="icon">
+              <img src="./assets/images/icons/yt-1.svg" alt="Youtube" />
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" title="Facebook" class="icon">
+              <img src="./assets/images/icons/fb-1.svg" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-link-list">
+          <li class="footer-link-item">
+            <a href="#" title="Giới thiệu">Giới thiệu</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Khoá học">Khoá học</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="podcasts">podcasts</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Books">Books</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Blog">Blog</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Liên hệ">Liên hệ</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Đăng ký">Đăng ký</a>
+          </li>
+        </ul>
+        <p class="copyrights">
+          2023 © Copyright of trongkha.com. All Right Reserved.
+        </p>
+        <a href="#" title="Trong Kha" class="footer-logo">
+          <img src="./assets/images/logo.png" alt="Trong Kha" />
+        </a>
+      </div>
+    </footer>
+    <!-- END FOOTER 
+    =================================-->
+
+    <!-- LIB -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/courses.js"></script>
+  </body>
+</html>

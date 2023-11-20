@@ -1,0 +1,151 @@
+// START COURSES DETAIL
+#courses-detail {
+  padding: 87px 0 125px;
+  margin-top: 27px;
+  background-color: $white;
+  .detail-heading {
+    @include flex(space-between, start, 20px);
+    padding-bottom: 37px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .heading-info {
+    .teacher {
+      font-size: 16px;
+      font-weight: $fw-b;
+      line-height: 30px;
+      margin-top: 18px;
+    }
+  }
+  .heading-button {
+    .button-underline {
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: $fw-b;
+      text-decoration: underline;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: right;
+      margin-top: 17px;
+      display: block;
+    }
+  }
+
+  .detail-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 28px;
+    margin-top: 74px;
+    .gallery-item {
+      border-radius: 20px;
+      overflow: hidden;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &:nth-child(1) {
+        grid-area: 1/1/4/4;
+      }
+
+      &:nth-child(2) {
+        grid-area: 1/4/2/6;
+      }
+      &:nth-child(3) {
+        grid-area: 2/4/4/6;
+      }
+    }
+  }
+
+  .detail-info {
+    margin-top: 74px;
+    @include flex(space-between, center, 30px);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    .info-item {
+      padding: 23px 62px;
+      border-radius: 5px;
+      border: 1px solid $black;
+      .title {
+        @include flex(center, center, 10px);
+        .icon {
+          width: 32px;
+          aspect-ratio: 1;
+        }
+        .text {
+          font-size: 14px;
+          line-height: 30px;
+          font-weight: $fw-b;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          white-space: nowrap;
+        }
+      }
+      .content {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: $fw-sb;
+        color: $yellow;
+        text-transform: uppercase;
+        font-family: $font-oswald;
+        margin-top: 12px;
+        text-align: center;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .detail-desc {
+    margin-top: 66px;
+    .text {
+      margin-bottom: 17px;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: $fw-l;
+    }
+  }
+}
+// END COURSES DETAIL
+
+// START RESPONSIVE
+@include tablet {
+  #courses-detail {
+    .detail-heading {
+      flex-direction: column;
+      .heading-button {
+        @include flex(space-between, end, unset);
+        width: 100%;
+      }
+    }
+    .detail-gallery {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 452px 212px;
+      .gallery-item {
+        &:nth-child(1) {
+          grid-area: 1/1/2/3;
+        }
+        &:nth-child(2) {
+          grid-area: 2/1/2/2;
+        }
+        &:nth-child(3) {
+          grid-area: 2/2/3/3;
+        }
+      }
+    }
+    .detail-info {
+    }
+  }
+}
+
+@include mobile {
+  #courses-detail {
+    .detail-heading {
+      .heading-button {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 20px;
+      }
+    }
+  }
+}
+// END RESPONSIVE

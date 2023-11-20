@@ -1,0 +1,74 @@
+// START BANNER
+
+#book-banner {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 64.52%
+    ),
+    url(../images/banner/book-bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 916px;
+  margin-top: -126px;
+  padding-top: 243px;
+  .banner-wrapper {
+    justify-content: space-between;
+  }
+  .banner-content {
+    max-width: 463px;
+    width: 100%;
+    .heading-block {
+      .title {
+        margin-bottom: 14px;
+      }
+    }
+    .text {
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: $fw-l;
+      margin-bottom: 17px;
+      color: $white;
+    }
+  }
+  .banner-image {
+    max-width: 558px;
+    overflow: hidden;
+    aspect-ratio: 558/613;
+    border-bottom-left-radius: 100px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+// END BANNER
+// START BOOK
+#book {
+  padding: 140px 0 170px;
+  background-color: $white;
+
+  .heading-block {
+    .title {
+      text-align: center;
+    }
+
+    .desc {
+      max-width: 569px;
+      text-align: center;
+      margin: 0 auto;
+      color: $black;
+    }
+  }
+}
+// END BOOK
+
+// START RESPONSIVE
+@include landscape-phone {
+  #book-banner {
+    height: 700px;
+    .banner-image {
+      display: none;
+    }
+  }
+}
+// END RESPONSIVE

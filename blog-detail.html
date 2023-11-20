@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LIB -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Blog Detail</title>
+  </head>
+  <body>
+    <!-- START HEADER 
+    =================================-->
+    <header id="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" title="Trong Kha" class="header-logo">
+            <img src="./assets/images/logo.png" alt="Logo" />
+          </a>
+          <div class="menu-pc">
+            <div class="top-bar">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Youtube" class="icon">
+                    <img src="./assets/images/icons/yt.svg" alt="Youtube" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#" title="Giới thiệu" class="link">Giới thiệu</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Khoá học" class="link">Khoá học</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Books" class="link">Books</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Blog" class="link">Blog</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Liên hệ" class="link">Liên hệ</a>
+                </li>
+                <li class="header-nav-item">
+                  <a
+                    href="#"
+                    title="Đăng ký"
+                    class="button button-solid button-m"
+                    >Đăng ký</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu-mobile">
+            <div class="top-bar">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Youtube" class="icon">
+                    <img src="./assets/images/icons/yt.svg" alt="Youtube" />
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Facebook" class="icon">
+                    <img src="./assets/images/icons/fb.svg" alt="Facebook" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="menu-button"
+              onclick="handleMenu('open')"
+            >
+              <img src="./assets/images/icons/hamberger.svg" alt="Menu" />
+            </button>
+            <nav class="header-nav">
+              <button
+                type="button"
+                class="close-button"
+                onclick="handleMenu('close')"
+              >
+                <img src="./assets/images/icons/xmark.svg" alt="Close" />
+              </button>
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#" title="Giới thiệu" class="link">Giới thiệu</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Khoá học" class="link">Khoá học</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Books" class="link">Books</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Blog" class="link">Blog</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#" title="Liên hệ" class="link">Liên hệ</a>
+                </li>
+                <li class="header-nav-item">
+                  <a
+                    href="#"
+                    title="Đăng ký"
+                    class="button button-solid button-m"
+                    >Đăng ký</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER 
+    =================================-->
+
+    <main>
+      <!-- START BLOG DETAIL 
+    =================================-->
+      <section id="blog-detail">
+        <div class="container">
+          <div class="blog-detail-wrapper">
+            <div class="blog-detail-post">
+              <div class="heading-block">
+                <h1 class="title">Từ Việt Nam, nghĩ về ánh sáng…</h1>
+              </div>
+              <div class="post-share">
+                <p class="date">
+                  <span class="icon">
+                    <img src="./assets/images/icons/calendar.svg" alt="icon" />
+                  </span>
+                  <span class="text"> 20/11/2023 </span>
+                </p>
+                <ul class="list">
+                  <li class="item facebook">
+                    <div class="icon">
+                      <img
+                        src="./assets/images/icons/fb-2.svg"
+                        alt="Facebook"
+                      />
+                    </div>
+                    <p class="text">Facebook</p>
+                  </li>
+                  <li class="item twitter">
+                    <div class="icon">
+                      <img src="./assets/images/icons/tw.svg" alt="Twitter" />
+                    </div>
+                    <p class="text">Twitter</p>
+                  </li>
+                  <li class="item pinterest">
+                    <div class="icon">
+                      <img
+                        src="./assets/images/icons/pinterest.svg"
+                        alt="Pinterest"
+                      />
+                    </div>
+                    <p class="text">Pinterest</p>
+                  </li>
+                  <li class="item linkedin">
+                    <div class="icon">
+                      <img
+                        src="./assets/images/icons/linkedin.svg"
+                        alt="LinkedIn"
+                      />
+                    </div>
+                    <p class="text">LinkedIn</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="post-content">
+                <img src="./assets/images/others/post.jpg" alt="Post" />
+                <p>
+                  Hôm kia, trong buổi chia sẻ về “Nhượng quyền - Thời & Thế”,
+                  mình có nói rất thẳng thắn rằng người Việt không tin nhau nên
+                  làm gì cũng kéo nhau xuống, nghĩ tiêu cực, đổ thừa, tranh cãi
+                  là chính chứ không đi tìm giải pháp cùng nhau. Một số người
+                  bạn quốc tế của mình nhận xét vậy. Chuyện này không có đúng
+                  sai. Nó là góc nhìn. Khách quan nhìn vào, người ta thấy thế
+                  thì người ta phát biểu như thế. Trong marketing có câu,
+                  “Perception is reality - Nhận thức chính là hiện thực”. Nếu đó
+                  là cách chúng ta trình diễn với thế giới và đó là cách thế
+                  giới cảm nhận về mình thì nó đương nhiên trở thành hiện thực,
+                  dù theo bạn đó có là sự thật hay không.
+                </p>
+                <p>
+                  Có bạn còn nói, ở thị trường của tôi, mọi người tin tưởng và
+                  cùng hợp tác, cộng tác tốt nên ngành nghề và hệ sinh thái dễ
+                  lớn mạnh hơn. Người Việt mình có câu “Buôn có bạn, bán có
+                  phường” âu cũng là như thế, nghĩa là ông bà mình xưa nay hiểu
+                  và trân trọng giá trị của sự “togetherness - cùng nhau” xây
+                  dựng, cùng nhau kiến tạo, cùng nhau lớn mạnh không phải chỉ vì
+                  cái lợi riêng tư mà còn vì màu cờ sắc áo chung. Còn nếu chúng
+                  ta cứ “lẻ tẻ”, ích kỷ chỉ chỉ biết lo cho bản thân, không chấp
+                  nhận được sự khác biệt, đa dạng, cái đầu không đủ minh triết
+                  để phân tích và nhận dạng vấn đề một cách khách quan, trái tim
+                  không đủ rộng để bao dung vài cú vấp ngã hay dăm ba lần sai
+                  nhịp thì, chưa bắt đầu đã nhìn thấy chiều kết thúc. Đã vậy,
+                  bắt đầu chi cho nó thêm bừa bộn cuộc đời này? Hay chúng ta
+                  thật ra đang khát khao sự bừa bộn đó trong đời để cảm thấy
+                  mình đang tồn tại? Hay sự bừa bộn đó chính là nguồn sống nuôi
+                  dưỡng bóng tối đang bần bật tìm cách phình to, chiếm lĩnh, sở
+                  hữu cái chủ thể đang có vẻ đang ngả về vùng thiếu sáng?
+                </p>
+                <p>
+                  Là con người, ai cũng có phần người phần con. Một khi phần con
+                  nó được nuôi dưỡng bằng sự tiêu cực, dù đó là sự tiêu cực của
+                  chính bạn, của người xung quanh bạn, của xã hội hay cả một
+                  quân đội ảo trên mạng, chuyên bu vào drama để sống thì, đương
+                  nhiên nó sẽ vươn vai đứng dậy. Và một khi nó đã đứng dậy, đã
+                  ùa ra và dẫn dắt chủ thể thì, mọi lời nói, hành động, lựa
+                  chọn, quyết định đều không còn minh triết. Chuyện đó là lẽ
+                  thường tình. Bên thắng cuộc, dù là bóng tối hay ánh sáng, nó
+                  đều là hạt giống nảy mầm từ bên trong bạn, từ cách bạn tưới
+                  tẩm nó bằng dưỡng chất tích cực hay tiêu cực, từ cách bạn hả
+                  hê với những ý nghĩ len lén ám màu độc ác, huỷ hoại hay xây
+                  dựng và kiến tạo.
+                </p>
+                <p>
+                  Có nhiều bạn than, môi trường vậy, xã hội vậy thì sống làm sao
+                  cho nó phải, cố làm sao cho nó tích cực, xoay sở làm sao cho
+                  ánh sáng nó mò mẫm tìm về? Một khi bạn đã đổ thừa cho yếu tố
+                  bên ngoài, thì đời này không còn gì nằm trong sự chủ động và
+                  kiểm soát của bạn nữa. Mọi sự phó mặc cho thế giới bên ngoài
+                  ảnh hưởng, dẫn dắt, quyết định. Nếu đó là cách bạn chọn để
+                  sống phần đời đã qua và còn lại của mình thì, đó là lựa chọn
+                  của cá nhân, không còn gì để bàn, không có gì cần cố gắng, chỉ
+                  việc để mặc cho thế thời nó đẩy mình đi, không phân định bóng
+                  tối hay ánh sáng, không còn lựa chọn và chủ quyền. Nếu đó là
+                  lựa chọn của bạn thì, đừng lên tiếng hay phản biện gì nữa cả,
+                  vì mỗi lựa chọn đều có hành trình của nó. Đạo bất đồng bất
+                  tương vi mưu - Không cùng chí hướng thì không thể cùng nhau
+                  mưu sự nghiệp được.
+                </p>
+              </div>
+            </div>
+            <div class="blog-detail-relate blog">
+              <div class="heading-block">
+                <h3 class="title">Bài đăng gần đây</h3>
+              </div>
+              <ul class="list">
+                <li class="item">
+                  <div class="blog-item">
+                    <div class="image">
+                      <img src="./assets/images/blog/1.jpg" alt="Blog" />
+                    </div>
+                    <div class="content">
+                      <span class="date"> 01/06/2023 </span>
+                      <a href="#" title="Diễn thuyết theo chủ đề" class="title"
+                        >Diễn thuyết theo chủ đề</a
+                      >
+                      <p class="desc">
+                        Chào bạn! Với mong muốn tạo ra những chương trình diễn
+                        thuyết, truyền cảm hứng tới thế hệ trẻ ở độ tuổi 15-30.
+                        Giúp các....
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="blog-item">
+                    <div class="image">
+                      <img src="./assets/images/blog/1.jpg" alt="Blog" />
+                    </div>
+                    <div class="content">
+                      <span class="date"> 01/06/2023 </span>
+                      <a href="#" title="Diễn thuyết theo chủ đề" class="title"
+                        >Diễn thuyết theo chủ đề</a
+                      >
+                      <p class="desc">
+                        Chào bạn! Với mong muốn tạo ra những chương trình diễn
+                        thuyết, truyền cảm hứng tới thế hệ trẻ ở độ tuổi 15-30.
+                        Giúp các....
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="blog-item">
+                    <div class="image">
+                      <img src="./assets/images/blog/1.jpg" alt="Blog" />
+                    </div>
+                    <div class="content">
+                      <span class="date"> 01/06/2023 </span>
+                      <a href="#" title="Diễn thuyết theo chủ đề" class="title"
+                        >Diễn thuyết theo chủ đề</a
+                      >
+                      <p class="desc">
+                        Chào bạn! Với mong muốn tạo ra những chương trình diễn
+                        thuyết, truyền cảm hứng tới thế hệ trẻ ở độ tuổi 15-30.
+                        Giúp các....
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="blog-item">
+                    <div class="image">
+                      <img src="./assets/images/blog/1.jpg" alt="Blog" />
+                    </div>
+                    <div class="content">
+                      <span class="date"> 01/06/2023 </span>
+                      <a href="#" title="Diễn thuyết theo chủ đề" class="title"
+                        >Diễn thuyết theo chủ đề</a
+                      >
+                      <p class="desc">
+                        Chào bạn! Với mong muốn tạo ra những chương trình diễn
+                        thuyết, truyền cảm hứng tới thế hệ trẻ ở độ tuổi 15-30.
+                        Giúp các....
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END BLOG DETAIL 
+    =================================-->
+    </main>
+    <!-- START FOOTER 
+    =================================-->
+    <footer id="footer">
+      <div class="container">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" title="Facebook" class="icon">
+              <img src="./assets/images/icons/fb-1.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" title="Youtube" class="icon">
+              <img src="./assets/images/icons/yt-1.svg" alt="Youtube" />
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" title="Facebook" class="icon">
+              <img src="./assets/images/icons/fb-1.svg" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-link-list">
+          <li class="footer-link-item">
+            <a href="#" title="Giới thiệu">Giới thiệu</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Khoá học">Khoá học</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="podcasts">podcasts</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Books">Books</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Blog">Blog</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Liên hệ">Liên hệ</a>
+          </li>
+          <li class="footer-link-item">
+            <a href="#" title="Đăng ký">Đăng ký</a>
+          </li>
+        </ul>
+        <p class="copyrights">
+          2023 © Copyright of trongkha.com. All Right Reserved.
+        </p>
+        <a href="#" title="Trong Kha" class="footer-logo">
+          <img src="./assets/images/logo.png" alt="Trong Kha" />
+        </a>
+      </div>
+    </footer>
+    <!-- END FOOTER 
+    =================================-->
+
+    <!-- LIB -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/courses.js"></script>
+  </body>
+</html>
