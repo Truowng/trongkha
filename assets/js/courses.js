@@ -9,11 +9,15 @@ const coursesValueSlider = new Swiper("#courses-value .value-slider .swiper", {
   breakpoints: {
     767: {
       slidesPerView: 2,
-      spaceBetween: 60,
+      spaceBetween: 40,
     },
     991: {
       slidesPerView: 3,
-      spaceBetween: 72,
+      spaceBetween: 40,
+    },
+    1199: {
+      slidesPerView: 4,
+      spaceBetween: 40,
     },
   },
 });

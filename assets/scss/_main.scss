@@ -180,6 +180,8 @@ img {
 // START HEADER
 #header {
   padding-top: 26px;
+  position: relative;
+  z-index: 1;
   .header-wrapper {
     @include flex(space-between, center, 20px);
   }
