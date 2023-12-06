@@ -2290,6 +2290,9 @@ img {
   border-radius: 20px;
   border: 1px solid #eabd50;
 }
+.value .value-item .content .title {
+  color: #eabd50;
+}
 .value .value-item .icon {
   width: 105px;
 }
