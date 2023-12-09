@@ -342,12 +342,8 @@
 @include extra-desktop {
   #home-banner {
     .banner-wrapper {
-      .heading-block {
-        .badge {
-          text-align: center;
-        }
-      }
       padding-top: 200px;
+      justify-content: center;
     }
   }
 }
