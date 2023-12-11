@@ -39,7 +39,9 @@ const videoControlButton = document.querySelector(
   "#home-video .video-container .video-control-button"
 );
 const videoContainer = document.querySelector("#home-video .video-container");
-
+const homeBannerVideo = document.querySelector("#home-banner .video video");
 videoControlButton.addEventListener("click", () => {
   videoContainer.classList.add("play");
 });
+
+homeBannerVideo.play();

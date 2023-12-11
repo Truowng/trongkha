@@ -1,6 +1,7 @@
 .heading-block {
   .badge {
-    white-space: wrap;
+    white-space: pre-line;
+    word-wrap: normal;
     text-align: left;
   }
 }
