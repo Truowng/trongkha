@@ -1991,6 +1991,12 @@ img {
   word-wrap: normal;
   text-align: left;
 }
+.heading-block .hero-title {
+  text-shadow: 1px 1px 1px #a1823a, 2px 2px 1px #a1823a, 3px 3px 1px #a1823a, 4px 4px 1px #a1823a;
+}
+.heading-block .title {
+  text-shadow: 1px 1px 1px #a1823a, 2px 2px 1px #a1823a, 3px 3px 1px #a1823a;
+}
 
 #home-banner .video {
   background-color: transparent;
