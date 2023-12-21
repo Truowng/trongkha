@@ -111,6 +111,17 @@
     overflow: hidden;
     border-radius: 10px;
 
+    &:hover {
+      .image {
+        img {
+          transform: translateX(20px);
+        }
+      }
+      .content {
+        bottom: 50px;
+      }
+    }
+
     &::before {
       content: "";
       width: 100%;
@@ -118,6 +129,7 @@
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 1;
       background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 48.22%);
     }
     .content {
@@ -127,6 +139,8 @@
       transform: translateX(-50%);
       width: 90%;
       height: 90px;
+      transition: all ease 0.5s;
+      z-index: 2;
       .title {
         text-align: center;
         font-family: $font-oswald;
@@ -145,9 +159,15 @@
     }
     .image {
       height: 100%;
+      position: relative;
       img {
+        position: absolute;
+        width: auto;
+        top: 0;
+        left: -45%;
         height: 100%;
         object-fit: cover;
+        transition: all ease 0.5s;
       }
     }
   }
