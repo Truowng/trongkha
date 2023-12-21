@@ -6,12 +6,30 @@
   }
 
   .hero-title {
-    text-shadow: 1px 1px 1px #a1823a, 2px 2px 1px #a1823a, 3px 3px 1px #a1823a,
-      4px 4px 1px #a1823a;
+    // text-shadow: 1px 1px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%), 2px 2px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%), 3px 3px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%),
+    //   4px 4px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%);
+    position: relative;
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100%;
+      background: linear-gradient(
+        180deg,
+        #dca028 0%,
+        #fae474 28.65%,
+        #e1ac25 56.25%,
+        #fae578 81.77%,
+        #e3b335 100%
+      );
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
   }
 
   .title {
-    text-shadow: 1px 1px 1px #a1823a, 2px 2px 1px #a1823a, 3px 3px 1px #a1823a;
+    // text-shadow: 1px 1px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%), 2px 2px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%), 3px 3px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%);
   }
 }
 
@@ -114,7 +132,7 @@
     &:hover {
       .image {
         img {
-          transform: translateX(20px);
+          transform: translateX(-40%);
         }
       }
       .content {
@@ -164,7 +182,8 @@
         position: absolute;
         width: auto;
         top: 0;
-        left: -45%;
+        left: 50%;
+        transform: translateX(-50%);
         height: 100%;
         object-fit: cover;
         transition: all ease 0.5s;
@@ -387,6 +406,21 @@
 
     .video-item {
       height: 400px;
+      &:hover {
+        .image {
+          img {
+            transform: unset;
+          }
+        }
+      }
+      .image {
+        img {
+          position: unset;
+          transform: unset;
+          width: 100%;
+        }
+      }
+
       &:nth-child(1) {
         grid-area: 1/1/3/3;
       }

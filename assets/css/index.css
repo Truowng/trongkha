@@ -1992,12 +1992,18 @@ img {
   text-align: left;
 }
 .heading-block .hero-title {
-  text-shadow: 1px 1px 1px #a1823a, 2px 2px 1px #a1823a, 3px 3px 1px #a1823a, 4px 4px 1px #a1823a;
+  position: relative;
 }
-.heading-block .title {
-  text-shadow: 1px 1px 1px #a1823a, 2px 2px 1px #a1823a, 3px 3px 1px #a1823a;
+.heading-block .hero-title::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  background: linear-gradient(180deg, #dca028 0%, #fae474 28.65%, #e1ac25 56.25%, #fae578 81.77%, #e3b335 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
-
 #home-banner .video {
   background-color: transparent;
   padding: 0;
@@ -2083,7 +2089,7 @@ img {
   border-radius: 10px;
 }
 .video .video-item:hover .image img {
-  transform: translateX(20px);
+  transform: translateX(-40%);
 }
 .video .video-item:hover .content {
   bottom: 50px;
@@ -2131,7 +2137,8 @@ img {
   position: absolute;
   width: auto;
   top: 0;
-  left: -45%;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2330,6 +2337,14 @@ img {
   }
   .video .video-item {
     height: 400px;
+  }
+  .video .video-item:hover .image img {
+    transform: unset;
+  }
+  .video .video-item .image img {
+    position: unset;
+    transform: unset;
+    width: 100%;
   }
   .video .video-item:nth-child(1) {
     grid-area: 1/1/3/3;
