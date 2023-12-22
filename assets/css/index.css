@@ -1991,19 +1991,27 @@ img {
   word-wrap: normal;
   text-align: left;
 }
-.heading-block .hero-title {
+.heading-block .hero-title,
+.heading-block .title {
   position: relative;
+  z-index: 2;
 }
-.heading-block .hero-title::before {
+.heading-block .hero-title::before,
+.heading-block .title::before {
   content: attr(data-text);
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 0px;
+  left: 6px;
   width: 100%;
   background: linear-gradient(180deg, #dca028 0%, #fae474 28.65%, #e1ac25 56.25%, #fae578 81.77%, #e3b335 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  z-index: -1;
 }
+.heading-block .title::before {
+  left: 3.3px;
+}
+
 #home-banner .video {
   background-color: transparent;
   padding: 0;

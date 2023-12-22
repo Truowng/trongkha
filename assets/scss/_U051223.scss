@@ -5,15 +5,15 @@
     text-align: left;
   }
 
-  .hero-title {
-    // text-shadow: 1px 1px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%), 2px 2px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%), 3px 3px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%),
-    //   4px 4px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%);
+  .hero-title,
+  .title {
     position: relative;
+    z-index: 2;
     &::before {
       content: attr(data-text);
       position: absolute;
-      top: 10px;
-      left: 10px;
+      top: 0px;
+      left: 6px;
       width: 100%;
       background: linear-gradient(
         180deg,
@@ -25,11 +25,14 @@
       );
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
+      z-index: -1;
     }
   }
 
   .title {
-    // text-shadow: 1px 1px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%), 2px 2px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%), 3px 3px 1px linear-gradient(180deg, #DCA028 0%, #FAE474 28.65%, #E1AC25 56.25%, #FAE578 81.77%, #E3B335 100%);
+    &::before {
+      left: 3.3px;
+    }
   }
 }
 
